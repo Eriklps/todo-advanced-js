@@ -4,17 +4,17 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Verdana;
-    color: #333;
+    color: #fff;
 }
   
 body {
-    background-color: #212121;
+    background-color: #121212;
 }
   
 button {
-    background-color: #fdfdfd;
+    background-color: #191818;
     color: #102f5e;
-    border: 2px solid #102f5e;
+    border: none;
     padding: 0.3rem 0.6rem;
     font-size: 1rem;
     cursor: pointer;
@@ -22,25 +22,30 @@ button {
     justify-content: center;
     align-items: center;
     transition: 0.4s;
+    border-radius: 5px;
 }
   
 button:hover {
-    background-color: #102f5e;
+    background-color: #fff;
 }
   
 button:hover > i {
-    color: #fff;
+    color: #212121;
 }
-  
+
 button i {
     pointer-events: none;
-    color: #102f5e;
+    color: #fff;
     font-weight: bold;
 }
   
 input,
 select {
     padding: 0.25rem 0.5rem;
+    background-color: #191818;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
 }
   
 .hide {
@@ -51,7 +56,7 @@ select {
 .todo-container {
     max-width: 450px;
     margin: 3rem auto 0;
-    background-color: #fdfdfd;
+    background-color: #2B2A2A;
     padding: 1.5rem;
     border-radius: 15px;
 }
@@ -59,14 +64,14 @@ select {
 .todo-container header {
     text-align: center;
     padding: 0 1rem 1rem;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #414141;
 }
   
 /* Todo Form */
 #todo-form,
 #edit-form {
     padding: 1rem;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #414141;
 }
   
   #todo-form p,
@@ -91,7 +96,7 @@ select {
 /* Todo Toolbar */
 #toolbar {
     padding: 1rem;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #414141;
     display: flex;
 }
   
@@ -100,7 +105,7 @@ select {
 }
   
 #search {
-    border-right: 1px solid #ddd;
+    border-right: 1px solid #414141;
     padding-right: 1rem;
     margin-right: 1rem;
     width: 65%;
@@ -133,7 +138,7 @@ select {
     justify-content: space-around;
     align-items: center;
     padding: 1rem 1rem;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #414141;
     transition: 0.3s;
 }
   
@@ -147,7 +152,7 @@ select {
 }
   
 .done {
-    background: #395169;
+    background: #212121;
 }
   
 .done h3 {
