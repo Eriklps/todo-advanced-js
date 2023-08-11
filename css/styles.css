@@ -13,7 +13,6 @@ body {
   
 button {
     background-color: #191818;
-    color: #102f5e;
     border: none;
     padding: 0.3rem 0.6rem;
     font-size: 1rem;
@@ -160,3 +159,4 @@ select {
     text-decoration: line-through;
     font-style: italic;
 }
+
