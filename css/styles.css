@@ -9,6 +9,7 @@
   
 body {
     background-color: #121212;
+    padding: 10px;
 }
   
 button {
@@ -101,7 +102,11 @@ select {
   
 #cancel-edit-btn {
     margin-top: 1rem;
-    color: #444;
+    color: #fff;
+}
+
+#cancel-edit-btn:hover {
+    background-color: #FF4C4C;
 }
   
 /* Todo Toolbar */
