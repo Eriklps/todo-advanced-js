@@ -32,6 +32,18 @@ button:hover > i {
     color: #212121;
 }
 
+.finish-todo:hover {
+    background-color: #34BF49;
+}
+
+.edit-todo:hover {
+    background-color: #0099E5;
+}
+
+.remove-todo:hover {
+    background-color: #FF4C4C;
+}
+
 button i {
     pointer-events: none;
     color: #fff;
@@ -155,7 +167,7 @@ select {
 }
   
 .done h3 {
-    color: #fff;
+    color: #34BF49;
     text-decoration: line-through;
     font-style: italic;
 }
