@@ -11,6 +11,10 @@ body {
     background-color: #121212;
     padding: 10px;
 }
+
+h1 i {
+    color: #34BF49;
+}
   
 button {
     background-color: #191818;
