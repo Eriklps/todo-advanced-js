@@ -1,4 +1,4 @@
-// Seleção de elementos
+// Select elements
 const todoForm = document.querySelector("#todo-form");
 const todoInput = document.querySelector("#todo-input");
 const todoList = document.querySelector("#todo-list");
@@ -11,7 +11,7 @@ const filterBtn = document.querySelector("#filter-select");
 
 let oldInputValue;
 
-// Funções
+// Functions
 const saveTodo = (text, done = 0, save = 1) => {
   const todo = document.createElement("div");
   todo.classList.add("todo");
@@ -35,7 +35,7 @@ const saveTodo = (text, done = 0, save = 1) => {
   deleteBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
   todo.appendChild(deleteBtn);
 
-  // Utilizando dados da localStorage
+  // Using localStorage data
   if (done) {
     todo.classList.add("done");
   }
@@ -64,7 +64,7 @@ const updateTodo = (text) => {
     if (todoTitle.innerText === oldInputValue) {
       todoTitle.innerText = text;
 
-      // Utilizando dados da localStorage
+      // Using localStorage data
       updateTodoLocalStorage(oldInputValue, text);
     }
   });
@@ -118,7 +118,7 @@ const filterTodos = (filterValue) => {
   }
 };
 
-// Eventos
+// Events
 todoForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
@@ -147,7 +147,7 @@ document.addEventListener("click", (e) => {
   if (targetEl.classList.contains("remove-todo")) {
     parentEl.remove();
 
-    // Utilizando dados da localStorage
+    // Using localStorage data
     removeTodoLocalStorage(todoTitle);
   }
 
